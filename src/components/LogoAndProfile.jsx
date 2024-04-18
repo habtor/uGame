@@ -2,7 +2,7 @@ import { FaGamepad } from "react-icons/fa";
 
 function LogoAndProfile() {
   return (
-    <div className="grid grid-cols-3  items-center m-3">
+    <div className="flex justify-between items-center m-3">
       <FaGamepad className="text-green text-4xl ml-4 " />
       <div className="flex justify-center headingColor">
         <span className="text-lg">My Feed</span>

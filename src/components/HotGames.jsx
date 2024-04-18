@@ -19,7 +19,7 @@ function HotGames() {
   };
 
   return (
-    <div className="mainBackgroud rounded-lg pb-4">
+    <div className="mainBackgroud rounded-lg pb-4 m-2">
       <div className="flex items-center p-2">
         <LiaFireAltSolid className="text-green text-4xl " />
         <span className="text-lg">Hot games</span>

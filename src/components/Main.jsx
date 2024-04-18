@@ -1,16 +1,14 @@
-import Activites from "./Activities";
+import Feed from "./Feed";
 import HotGames from "./HotGames";
+import useNavBarFilter from "../hooks/NavBarFliter";
 
 function Main() {
+  const { filter } = useNavBarFilter();
   return (
-    <div className="bg-darkColor rounded-t-xl h- pt-1">
-      <div className="flex flex-col m-2 rounded-xl mt-2 h-">
-        <HotGames />
-        <div className="overflow-auto h-">
-          <Activites />
-        </div>
-      </div>
-    </div>
+    <>
+      <HotGames />
+      {filter === "feed" ? <Feed /> : ""}
+    </>
   );
 }
 
