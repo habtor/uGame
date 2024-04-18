@@ -42,7 +42,7 @@ export const gamers = [
     key: 0,
     name: "John Doe",
     image:
-      "https://png.pngtree.com/thumb_back/fh260/background/20230611/pngtree-an-anime-character-wearing-headphones-and-glasses-image_2952865.jpg",
+      "https://global.discourse-cdn.com/business4/uploads/inductiveautomation/original/3X/9/f/9f22c2445ea34846aa71825a625f65efa7757680.png",
     activity: "Playing Fortnite",
   },
   {
@@ -57,69 +57,90 @@ export const gamers = [
     name: "Marc",
     image:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNqiS-e5Yt-EPvtFU9FTAeQ5fBXp1tHVt0krjGwcbIhazpa7GrAzYY90psT0aDmOQxVE4&usqp=CAU",
-    activity: "Asd added Tanage Mutant Ninja Turtles to his games",
+    activity: "added Tanage Mutant Ninja Turtles to his games",
   },
   {
     key: 3,
     name: "Barbara",
     image:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_YBV_urBSTV6xarofLLBeCxWZ4kWKpYinuxkkVa23dZSgIZs-BPMAjI9cgeJqErU3Ov8&usqp=CAU",
-    activity: "Asd added Tanage Mutant Ninja Turtles to his games",
+    activity: "added Tanage Mutant Ninja Turtles to his games",
   },
   {
     key: 4,
     name: "Wendy",
     image:
       "https://i0.wp.com/quanticfoundry.com/wp-content/uploads/2015/07/photodune-9235903-game-m-16x9.jpg?fit=1280%2C721&ssl=1",
-    activity: "Asd added Tanage Mutant Ninja Turtles to his games",
+    activity: "added Tanage Mutant Ninja Turtles to his games",
   },
   {
     key: 5,
     name: "Randy",
     image:
       "https://play-lh.googleusercontent.com/oCYOY1QhaKjAhxQ5gFBGgtN6-g8CLluDrQyD70-yWvfrQt1sDXg9ZlZ7Ie_R7enppg=w526-h296-rw",
-    activity: "Asd added Tanage Mutant Ninja Turtles to his games",
+    activity: "added Tanage Mutant Ninja Turtles to his games",
   },
   {
     key: 6,
     name: "Swan",
     image:
       "https://play-lh.googleusercontent.com/Sb5od0gQvJyuevITuUZ5Ko46WqFEBjPZlT7xIMfGWfbyaGCqF0nCXPJTa-poWuwSu-8=w540-h302-rw",
-    activity: "Asd added Tanage Mutant Ninja Turtles to his games",
+    activity: "added Tanage Mutant Ninja Turtles to his games",
   },
   {
     key: 7,
     name: "Yolanda",
     image:
       "https://cdn.openart.ai/uploads/image_SSluc0-9_1686942486785_512.webp",
-    activity: "Asd added Tanage Mutant Ninja Turtles to his games",
+    activity: "added Tanage Mutant Ninja Turtles to his games",
   },
   {
     key: 8,
     name: "Tina Doe",
     image:
       "https://img.freepik.com/premium-vector/vector-gaming-gamer-logo-design-illustration_894423-53.jpg",
-    activity: "Asd added Tanage Mutant Ninja Turtles to his games",
+    activity: "added Tanage Mutant Ninja Turtles to his games",
   },
   {
     key: 9,
     name: "Fernando",
     image:
       "https://as2.ftcdn.net/v2/jpg/05/76/65/21/1000_F_576652189_WK1JiTOwjKCFIJDJJLI1Q6RtwSfpgspu.jpg",
-    activity: "Asd added Tanage Mutant Ninja Turtles to his games",
+    activity: "added Tanage Mutant Ninja Turtles to his games",
   },
   {
     key: 19,
     name: "Fernando",
     image:
       "https://as2.ftcdn.net/v2/jpg/05/76/65/21/1000_F_576652189_WK1JiTOwjKCFIJDJJLI1Q6RtwSfpgspu.jpg",
-    activity: "Asd added Tanage Mutant Ninja Turtles to his games",
+    activity: "added Tanage Mutant Ninja Turtles to his games",
   },
   {
     key: 29,
     name: "Fernando",
     image:
       "https://as2.ftcdn.net/v2/jpg/05/76/65/21/1000_F_576652189_WK1JiTOwjKCFIJDJJLI1Q6RtwSfpgspu.jpg",
-    activity: "Asd added Tanage Mutant Ninja Turtles to his games",
+    activity: "added Tanage Mutant Ninja Turtles to his games",
+  },
+  {
+    key: 229,
+    name: "Fernando",
+    image:
+      "https://as2.ftcdn.net/v2/jpg/05/76/65/21/1000_F_576652189_WK1JiTOwjKCFIJDJJLI1Q6RtwSfpgspu.jpg",
+    activity: "added Tanage Mutant Ninja Turtles to his games",
+  },
+  {
+    key: 239,
+    name: "Fernando",
+    image:
+      "https://as2.ftcdn.net/v2/jpg/05/76/65/21/1000_F_576652189_WK1JiTOwjKCFIJDJJLI1Q6RtwSfpgspu.jpg",
+    activity: "added Tanage Mutant Ninja Turtles to his games",
+  },
+  {
+    key: 249,
+    name: "Fernando",
+    image:
+      "https://as2.ftcdn.net/v2/jpg/05/76/65/21/1000_F_576652189_WK1JiTOwjKCFIJDJJLI1Q6RtwSfpgspu.jpg",
+    activity: "added Tanage Mutant Ninja Turtles to his games",
   },
 ];
