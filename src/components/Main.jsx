@@ -1,15 +1,24 @@
 import Feed from "./Feed";
 import HotGames from "./HotGames";
 import useNavBarFilter from "../hooks/NavBarFliter";
+import Games from "./Games";
 
 function Main() {
   const { filter } = useNavBarFilter();
   return (
     <>
-      <HotGames />
-      {filter === "feed" ? <Feed /> : ""}
+      {filter === "Feed" ? (
+        <>
+          <HotGames />
+          <Feed />
+        </>
+      ) : filter === "Games" ? (
+        <Games />
+      ) : null}
     </>
   );
 }
 
 export default Main;
+
+

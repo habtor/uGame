@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
 import { LiaFireAltSolid } from "react-icons/lia";
-import { games } from "./games";
+import { games } from "./gamesArray";
 
 function HotGames() {
   const containerRef = useRef(null);

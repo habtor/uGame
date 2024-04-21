@@ -1,11 +1,16 @@
 import { FaGamepad } from "react-icons/fa";
+import useNavBarFilter from "../hooks/NavBarFliter";
 
 function LogoAndProfile() {
+  const { filter } = useNavBarFilter();
+  
   return (
     <div className="flex justify-between items-center m-3">
       <FaGamepad className="text-green text-4xl ml-4 " />
       <div className="flex justify-center headingColor">
-        <span className="text-lg">My Feed</span>
+        <span className="text-lg">
+          {filter == "feed" ? `My ${filter}` : `${filter}`}
+        </span>
       </div>
       <div className="flex justify-end">
         <div
