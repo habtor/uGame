@@ -1,10 +1,10 @@
-import { gamers } from "./games";
+import { gamers } from "../../data/gamesArray";
 import { SlFeed } from "react-icons/sl";
 
 function Feed() {
   return (
     <>
-      <div className="flex items-center pl-3  py-2 mainBackgroud mx-2 rounded-t-lg">
+      <div className="flex items-center pl-3 py-2 mainBackgroud mx-2 rounded-t-lg">
         <SlFeed className="text-green text-2xl mr-2" />
         <span>Feed</span>
       </div>

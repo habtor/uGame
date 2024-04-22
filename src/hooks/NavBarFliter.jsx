@@ -1,7 +1,7 @@
 import { create } from "zustand";
 
 const useNavBarFilter = create((set) => ({
-  filter: "feed",
+  filter: "Games",
   setFilter: (filter) => set({ filter }),
 }));
 
