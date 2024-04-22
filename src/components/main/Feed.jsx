@@ -1,4 +1,4 @@
-import { gamers } from "./gamesArray";
+import { gamers } from "../../data/gamesArray";
 import { SlFeed } from "react-icons/sl";
 
 function Feed() {

@@ -1,14 +1,12 @@
 import LogoAndProfile from "../components/LogoAndProfile";
-import Main from "../components/Main";
-import NavBar from "../components/NavBar";
+import Main from "../components/main/Main";
+import NavBar from "../components/main/NavBar";
 
 function Home() {
   return (
-    <div className="relative flex flex-col h-full sm:w-full sm:h-3/4 w-[306px] max-w-[1200px] rounded-3xl main mainBackgroud text-white overflow-hidden">
+    <div className=" relative h-full sm:w-[1200px]  w-[306px] max-w-[1200px] bg-darkColor text-white mt-1">
       <LogoAndProfile />
-      <div className="bg-darkColor h-full flex flex-col overflow-hidden">
-        <Main />
-      </div>
+      <Main />
       <NavBar />
     </div>
   );

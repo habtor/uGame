@@ -4,17 +4,29 @@ export const games = [
     name: "Teenage Mutant Ninja Turtles",
     image:
       "https://assets.nick.com/uri/mgid:arc:imageassetref:shared.nick.us:34ab25af-2b95-485e-8bd6-c6843005b5de?quality=0.7&gen=ntrn&legacyStatusCode=true&format=webp&height=360&width=480&crop=true",
+    price: 19.95,
+    rating: 3.7,
+    players: 251,
+    category: "Action",
   },
   {
     key: 1,
     name: "Fortnite",
     image: "https://digitaldragon.co/wp-content/uploads/2023/07/Fortnite.jpeg",
+    price: 10.99,
+    rating: 4.5,
+    players: 251,
+    category: "Strategy",
   },
   {
     key: 2,
     name: "Modern Warfare III",
     image:
-      "https://gaming-cdn.com/images/products/15290/380x218/call-of-duty-modern-warfare-iii-ps5-playstation-5-game-playstation-store-cover.jpg?v=1699604317",
+      "https://assets.bgames.com/4/116274/102273/1200x630/traffic-tour.webp",
+    price: 44.99,
+    rating: 4.9,
+    players: 251,
+    category: "Sport",
   },
   // {
   //   key: 3,

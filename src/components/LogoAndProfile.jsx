@@ -3,9 +3,9 @@ import useNavBarFilter from "../hooks/NavBarFliter";
 
 function LogoAndProfile() {
   const { filter } = useNavBarFilter();
-  
+
   return (
-    <div className="flex justify-between items-center m-3">
+    <div className="a absolute w-full left-0 flex justify-between items-center  bg-green2 rounded-t-lg">
       <FaGamepad className="text-green text-4xl ml-4 " />
       <div className="flex justify-center headingColor">
         <span className="text-lg">
@@ -14,9 +14,9 @@ function LogoAndProfile() {
       </div>
       <div className="flex justify-end">
         <div
-          className="bg-cover bg-center w-9 h-9 rounded-full mr-4 border-green border-2"
+          className="bg-cover bg-center w-9 h-9 rounded-full mr-4 m-1"
           style={{
-            backgroundImage: `url(https://static.vecteezy.com/system/resources/thumbnails/006/988/698/small/man-headphones-mascot-logo-gaming-illustration-vector.jpg)`,
+            backgroundImage: `url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNqiS-e5Yt-EPvtFU9FTAeQ5fBXp1tHVt0krjGwcbIhazpa7GrAzYY90psT0aDmOQxVE4&usqp=CAU)`,
           }}
         ></div>
       </div>

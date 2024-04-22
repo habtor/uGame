@@ -7,23 +7,14 @@
   background-color: #222035;
 }
 .appBackColor {
-  background: linear-gradient(90deg, #2c2f38 0%, #343740 50%, #2c2f38 100%);
+  background-color: #17151e;
 }
 body {
   font-family: "VT323", monospace;
   font-weight: 400;
   font-style: normal;
 }
-.headingColor {
-  /* Create a linear gradient background */
-  background: linear-gradient(90deg, #55ff00 0%, #ffd500 50%, #55ff00 100%);
 
-  /* Clip the background to the text */
-  -webkit-background-clip: text;
-  background-clip: text;
-
-  color: white;
-}
 /* ::-webkit-scrollbar {
   display: none;
 } */

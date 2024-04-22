@@ -2,7 +2,7 @@ import { BiHomeAlt } from "react-icons/bi";
 import { MdOutlineGames } from "react-icons/md";
 import { HiOutlineChatAlt2 } from "react-icons/hi";
 import { BsPerson } from "react-icons/bs";
-import useNavBarFilter from "../hooks/NavBarFliter";
+import useNavBarFilter from "../../hooks/NavBarFliter";
 import { useState } from "react";
 
 function NavBar() {
