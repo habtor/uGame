@@ -13,7 +13,9 @@ function Main() {
           <Feed />
         </>
       ) : filter === "Games" ? (
-        <Games />
+        <>
+          <Games />
+        </>
       ) : null}
     </div>
   );

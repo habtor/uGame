@@ -6,8 +6,10 @@ function Home() {
   return (
     <div className=" relative h-full sm:w-[1200px]  w-[306px] max-w-[1200px] bg-darkColor text-white mt-1">
       <LogoAndProfile />
-      <Main />
+
       <NavBar />
+
+      <Main />
     </div>
   );
 }

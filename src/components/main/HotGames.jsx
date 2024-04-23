@@ -1,48 +1,63 @@
 import { games } from "../../data/gamesArray";
 import { FaFireAlt } from "react-icons/fa";
 import { TiStarOutline } from "react-icons/ti";
-// import { CgGames } from "react-icons/cg";
+import { CgGames } from "react-icons/cg";
 import { FaEuroSign } from "react-icons/fa";
 
 function HotGames() {
   return (
-    <div className="mainBackgroud rounded-lg p-4 pt-2">
-      <span className="text-green2 text-2xl flex items-center">
-        <FaFireAlt className="mr-2" />
+    <div className="mainBackgroud rounded-lg p-4 pt-2 border-y-[1px] border-green2  mt-5">
+      {/* sm:mt-[-20px] mt-[-42px] */}
+      <span className="text-gsreen2 text-2xl flex items-center">
+        <FaFireAlt className="mr-2 text-yellow-500" />
         Hot Games
       </span>
 
-      <div className="flex flex-col sm:flex-row justify-center items-center">
+      <div className="flex flex-col sm:flex-row justify-center items-center ">
         {games.map((game) => (
           <div
             key={game.key}
-            className="flex flex-col w-full mt-5 sm:m-3 rounded-lg shadow-slate-700 "
+            className="flex flex-col w-full mt-5 sm:m-3 rounded-lg shadow-slate-700 cursor-pointer"
           >
             <div
-              className="bg-cover bg-center w-full h-64 rounded-lg "
+              className="bg-cover bg-center w-full h-64 sm:h-96 rounded-lg"
               style={{
                 backgroundImage: `url(${game.image})`,
               }}
             >
               <div className="flex flex-col justify-between h-full">
-                <div></div>
-                <div className="flex flex-col justify-between h-1/4 backdrop-blur-md text-white px-2 py-1 rounded-lg bg-slate-700 bg-opacity-25 m-1">
-                  <div className="flex justify-between">
-                    <span className="text-gray-100">{game.name}</span>
-                    <div className="flex items-center">
-                      <FaEuroSign className="text-sm" />{" "}
-                      <span>{game.price}</span>
+                <div className="flex justify-end">
+                  <span className="bg-gray-900 bg-opacity-40 border-2 border-green2 rounded-bl-xl rounded-tr-lg px-2 w-16 text-center">
+                    {game.category}
+                  </span>
+                </div>
+                <div className="myDiv relative h-[100px] w-full bg-opacity-70 bg-slate-700">
+                  <svg className="absolute bottom-0 h-full w-full ">
+                    <clipPath
+                      id="hotGames-clip-path"
+                      clipPathUnits="objectBoundingBox"
+                    >
+                      <path d="M1,0.951 V0.384 C1,0.354,0.994,0.33,0.984,0.33 H0.498 C0.494,0.33,0.49,0.325,0.487,0.317 L0.38,0.018 C0.377,0.009,0.373,0.004,0.369,0.004 L0.018,0.004 C0.009,0.004,0.001,0.028,0.001,0.058 L0.001,0.951 C0.001,0.98,0.009,1,0.018,1 H0.984 C0.994,1,1,0.98,1,0.951"></path>
+                    </clipPath>
+                  </svg>
+                  <div className="flex flex-col justify-between h-full p-2">
+                    <div className="pl-2 flex flex-col justify-between">
+                      <span className="flex items-center">
+                        <FaEuroSign className="text-sm text-green-400" />
+                        <span>{game.price}</span>
+                      </span>
+                      <span className="flex items-end ">{game.name}</span>
                     </div>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="flex items-center">
-                      <TiStarOutline className="text-xl mr-1" />
-                      {game.rating}
-                    </span>
-                    <span className="flex items-center">
-                      {/* <CgGames className="text-xl mr-1" /> */}
-                      {game.players} players
-                    </span>
+                    <div className="flex justify-between px-2">
+                      <span className="flex">
+                        <TiStarOutline className="text-xl mr-1 text-yellow-500" />
+                        {game.rating}
+                      </span>
+                      <span className="flex items-center">
+                        <CgGames className="mr-2 text-xl" />
+                        <span>{game.players} Players</span>
+                      </span>
+                    </div>
                   </div>
                 </div>
               </div>
