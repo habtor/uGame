@@ -4,10 +4,17 @@
 @tailwind utilities;
 
 .mainBackgroud {
-  background-color: #222035;
+  background-color: #222035ca;
+  backdrop-filter: blur(5px);
 }
 .appBackColor {
-  background-color: #17151e;
+  /* background-color: #17151e; */
+  /* background: linear-gradient(125deg, #1b1823 0%, #17151c 50%, #17151e 100%); */
+  background-image: url("https://i.pinimg.com/originals/54/42/31/544231f557521d96db675298d7bcbb07.jpg");
+  background-size: cover;
+  background-position: center;
+  /* background-repeat: no-repeat; */
+  background-attachment: fixed;
 }
 body {
   font-family: "VT323", monospace;
@@ -42,8 +49,18 @@ body {
 .clipped {
   /* width: 100%;
   height: 550px; */
-  /* background: turquoise url(https://www.rocketleague.com/images/keyart/rl_evergreen_16x9.jpg);
+/* background: turquoise url(https://www.rocketleague.com/images/keyart/rl_evergreen_16x9.jpg);
   background-size: cover;
   -webkit-clip-path: url(#my-clip-path);
   clip-path: polygon(50% 0, 100% 50%, 50% 150%,50% 100%, 0 50%); */
 /* } */
+
+/* ================================= */
+/* ================================= */
+/* ================================= */
+/* ================================= */
+/* ================================= */
+
+.homeBackground {
+  background: linear-gradient(125deg, rgb(76, 81, 74) 0%, rgb(30, 30, 30) 80%);
+}
