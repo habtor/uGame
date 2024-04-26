@@ -6,6 +6,7 @@ export default {
       colors: {
         green2: "#b4e100",
         darkColor: "#0C0B11",
+        lightGreen: "#C1C0AA",
       },
     },
   },
