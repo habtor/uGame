@@ -1,8 +1,6 @@
-import LogoAndProfile from "../components/LogoAndProfile";
 import Main from "../components/main/Main";
 import NavBar from "../components/main/NavBar";
-import Main2 from "../newComponents/Main2";
-import Nav from "../newComponents/Nav";
+import Nav from "../components/main/Nav";
 
 function Home() {
   return (
@@ -13,9 +11,9 @@ function Home() {
 
     //   <Main />
     // </div>
-    <div className="relative h-full sm:w-[1200px]  w-[306px] max-w-[1200px] mainBackgroud m-auto text-white sm:px-24 py-5">
+    <div className="relative h-full sm:w-full  w-[306px] max-w-[1200px] mainBackgrsoud m-auto text-white sm:px-20 py-5">
       <Nav />
-      <Main2 />
+      <Main />
     </div>
   );
 }
