@@ -6,21 +6,21 @@ import { FaEuroSign } from "react-icons/fa";
 
 function HotGames() {
   return (
-    <div className="mainBackgroud rounded-lg p-4 pt-2 border-y-[1px] border-green2  mt-5">
+    <div className="mainBackgroud rounded-lg p-4 pt-2 border-y-[1px] border-green2  mt-10">
       {/* sm:mt-[-20px] mt-[-42px] */}
       <span className="text-gsreen2 text-2xl flex items-center">
         <FaFireAlt className="mr-2 text-yellow-500" />
         Hot Games
       </span>
 
-      <div className="flex flex-col sm:flex-row justify-center items-center ">
+      <div className="flex flex-col sm:flex-row items-center overflow-auto">
         {games.map((game) => (
           <div
             key={game.key}
-            className="flex flex-col w-full mt-5 sm:m-3 rounded-lg shadow-slate-700 cursor-pointer"
+            className="flex flex-col w-full mt-5 sm:m-3 rounded-lg "
           >
             <div
-              className="bg-cover bg-center w-full h-64 sm:h-96 rounded-lg"
+              className="bg-cover bg-center sm:w-60 h-64 sm:h-96 rounded-lg"
               style={{
                 backgroundImage: `url(${game.image})`,
               }}

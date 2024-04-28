@@ -1,12 +1,63 @@
 @import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* =============Swiper==================== */
+/* =============Swiper==================== */
+/* =============Swiper==================== */
+:root {
+  --swiper-theme-color: #b4e100;
+}
+.autoplay-progress {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  z-index: 10;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: var(--swiper-thseme-color);
+}
+
+.autoplay-progress svg {
+  --progress: 0;
+  position: absolute;
+  left: 0;
+  top: 0px;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  stroke-width: 4px;
+  stroke: rgb(77, 255, 0);
+  fill: none;
+  stroke-dashoffset: calc(125.6px * (1 - var(--progress)));
+  stroke-dasharray: 125.6;
+  transform: rotate(-90deg);
+}
+
+/* =============Swiper==================== */
+/* =============Swiper==================== */
+/* =============Swiper==================== */
 
 .mainBackgroud {
   background-color: #222035ca;
   backdrop-filter: blur(5px);
 }
+.uGame {
+  font-family: "Protest Strike", sans-serif;
+}
+
+.protest-strike-regular {
+  font-family: "Protest Strike", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .appBackColor {
   /* background-color: #17151e; */
   /* background: linear-gradient(125deg, #1b1823 0%, #17151c 50%, #17151e 100%); */
@@ -22,9 +73,9 @@ body {
   font-style: normal;
 }
 
-/* ::-webkit-scrollbar {
+::-webkit-scrollbar {
   display: none;
-} */
+}
 
 .myDiv {
   cursor: pointer;

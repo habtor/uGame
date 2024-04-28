@@ -2,14 +2,13 @@ export const games = [
   {
     key: 0,
     name: "Teenage Mutant Ninja Turtles",
-    image:
-      "https://yt3.googleusercontent.com/447XAt80-ow7poHghoEV2f_0xf-QypVPzTqEFlwVsvijrS56-dpTU3ICge4OP48V8nfk6x5j",
+    image: "https://digitaldragon.co/wp-content/uploads/2023/07/Fortnite.jpeg",
     price: 19.95,
     rating: 3.7,
     players: 251,
     category: "Action",
     description:
-      "This is a game about turtles and ninjas and stuff like that lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+      "This is a game about turtles and ninjas and stuff like that lorem ipsum dolor sit amet consectetur adipisicing elit.",
     screenShots: [
       "https://img.olympics.com/images/image/private/t_s_pog_staticContent_hero_md/f_auto/primary/qf91enynlq3hlgtkmbon",
       "https://www.cnet.com/a/img/resize/aa0cb54781b11950f3eb86b3402c68329659d1bc/hub/2018/01/17/c1ed8f4a-9b5d-43c4-9404-e894e8d1195e/get-better-at-rocket-league-3.png?auto=webp&fit=crop&height=1200&width=1200",
@@ -19,141 +18,121 @@ export const games = [
   {
     key: 1,
     name: "Fortnite",
-    image: "https://digitaldragon.co/wp-content/uploads/2023/07/Fortnite.jpeg",
-    price: 10.99,
-    rating: 4.5,
+    image:
+      "https://yt3.googleusercontent.com/447XAt80-ow7poHghoEV2f_0xf-QypVPzTqEFlwVsvijrS56-dpTU3ICge4OP48V8nfk6x5j",
+    price: 19.95,
+    rating: 3.7,
     players: 251,
-    category: "Strategy",
+    category: "Sport",
+    description:
+      "This is a game about turtles and ninjas and stuff like that lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    screenShots: [
+      "https://img.olympics.com/images/image/private/t_s_pog_staticContent_hero_md/f_auto/primary/qf91enynlq3hlgtkmbon",
+      "https://www.cnet.com/a/img/resize/aa0cb54781b11950f3eb86b3402c68329659d1bc/hub/2018/01/17/c1ed8f4a-9b5d-43c4-9404-e894e8d1195e/get-better-at-rocket-league-3.png?auto=webp&fit=crop&height=1200&width=1200",
+      "https://i.ytimg.com/vi/Sct-pP-1Ip0/maxresdefault.jpg",
+    ],
   },
   {
     key: 2,
     name: "Modern Warfare III",
     image:
       "https://assets.bgames.com/4/116274/102273/1200x630/traffic-tour.webp",
-    price: 44.99,
-    rating: 4.9,
+    price: 19.95,
+    rating: 3.7,
     players: 251,
-    category: "Sport",
+    category: "Shooter",
+    description:
+      "This is a game about turtles and ninjas and stuff like that lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    screenShots: [
+      "https://img.olympics.com/images/image/private/t_s_pog_staticContent_hero_md/f_auto/primary/qf91enynlq3hlgtkmbon",
+      "https://www.cnet.com/a/img/resize/aa0cb54781b11950f3eb86b3402c68329659d1bc/hub/2018/01/17/c1ed8f4a-9b5d-43c4-9404-e894e8d1195e/get-better-at-rocket-league-3.png?auto=webp&fit=crop&height=1200&width=1200",
+      "https://i.ytimg.com/vi/Sct-pP-1Ip0/maxresdefault.jpg",
+    ],
   },
   {
     key: 3,
     name: "Modern Warfare III",
-    image: "https://www.rocketleague.com/images/keyart/rl_evergreen_16x9.jpg",
-    price: 44.99,
-    rating: 4.9,
+    image: "https://digitaldragon.co/wp-content/uploads/2023/07/Fortnite.jpeg",
+    price: 19.95,
+    rating: 3.7,
     players: 251,
-    category: "Sport",
+    category: "RPG",
+    description:
+      "This is a game about turtles and ninjas and stuff like that lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    screenShots: [
+      "https://img.olympics.com/images/image/private/t_s_pog_staticContent_hero_md/f_auto/primary/qf91enynlq3hlgtkmbon",
+      "https://www.cnet.com/a/img/resize/aa0cb54781b11950f3eb86b3402c68329659d1bc/hub/2018/01/17/c1ed8f4a-9b5d-43c4-9404-e894e8d1195e/get-better-at-rocket-league-3.png?auto=webp&fit=crop&height=1200&width=1200",
+      "https://i.ytimg.com/vi/Sct-pP-1Ip0/maxresdefault.jpg",
+    ],
   },
-  // {
-  //   key: 3,
-  //   name: "Teenage Mutant Ninja Turtles",
-  //   image:
-  //     "https://store-images.s-microsoft.com/image/apps.61483.70702278257994163.1152c6f1-f586-40eb-a61e-0f8bad1ee621.dac35347-06f6-4003-88b5-931747a876cf?q=90&w=256&h=384&mode=crop&format=jpg&background=%230078D7",
-  // },
-  // {
-  //   key: 4,
-  //   name: "Fortnite",
-  //   image: "https://digitaldragon.co/wp-content/uploads/2023/07/Fortnite.jpeg",
-  // },
-  // {
-  //   key: 5,
-  //   name: "Modern Warfare III",
-  //   image:
-  //     "https://gaming-cdn.com/images/products/15290/380x218/call-of-duty-modern-warfare-iii-ps5-playstation-5-game-playstation-store-cover.jpg?v=1699604317",
-  // },
-  // {
-  //   key: 6,
-  //   name: "Teenage Mutant Ninja Turtles",
-  //   image:
-  //     "https://assets.nick.com/uri/mgid:arc:imageassetref:shared.nick.us:34ab25af-2b95-485e-8bd6-c6843005b5de?quality=0.7&gen=ntrn&legacyStatusCode=true&format=webp&height=360&width=480&crop=true",
-  // },
-  // {
-  //   key: 7,
-  //   name: "Fortnite",
-  //   image: "https://digitaldragon.co/wp-content/uploads/2023/07/Fortnite.jpeg",
-  // },
-  // {
-  //   key: 8,
-  //   name: "Modern Warfare III",
-  //   image:
-  //     "https://gaming-cdn.com/images/products/15290/380x218/call-of-duty-modern-warfare-iii-ps5-playstation-5-game-playstation-store-cover.jpg?v=1699604317",
-  // },
-  // {
-  //   key: 9,
-  //   name: "Teenage Mutant Ninja Turtles",
-  //   image:
-  //     "https://assets.nick.com/uri/mgid:arc:imageassetref:shared.nick.us:34ab25af-2b95-485e-8bd6-c6843005b5de?quality=0.7&gen=ntrn&legacyStatusCode=true&format=webp&height=360&width=480&crop=true",
-  // },
-  // {
-  //   key: 17,
-  //   name: "Fortnite",
-  //   image: "https://digitaldragon.co/wp-content/uploads/2023/07/Fortnite.jpeg",
-  // },
-  // {
-  //   key: 228,
-  //   name: "Modern Warfare III",
-  //   image:
-  //     "https://gaming-cdn.com/images/products/15290/380x218/call-of-duty-modern-warfare-iii-ps5-playstation-5-game-playstation-store-cover.jpg?v=1699604317",
-  // },
-  // {
-  //   key: 336,
-  //   name: "Teenage Mutant Ninja Turtles",
-  //   image:
-  //     "https://assets.nick.com/uri/mgid:arc:imageassetref:shared.nick.us:34ab25af-2b95-485e-8bd6-c6843005b5de?quality=0.7&gen=ntrn&legacyStatusCode=true&format=webp&height=360&width=480&crop=true",
-  // },
-  // {
-  //   key: 47,
-  //   name: "Fortnite",
-  //   image: "https://digitaldragon.co/wp-content/uploads/2023/07/Fortnite.jpeg",
-  // },
-  // {
-  //   key: 558,
-  //   name: "Modern Warfare III",
-  //   image:
-  //     "https://gaming-cdn.com/images/products/15290/380x218/call-of-duty-modern-warfare-iii-ps5-playstation-5-game-playstation-store-cover.jpg?v=1699604317",
-  // },
-  // {
-  //   key: 126,
-  //   name: "Teenage Mutant Ninja Turtles",
-  //   image:
-  //     "https://assets.nick.com/uri/mgid:arc:imageassetref:shared.nick.us:34ab25af-2b95-485e-8bd6-c6843005b5de?quality=0.7&gen=ntrn&legacyStatusCode=true&format=webp&height=360&width=480&crop=true",
-  // },
-  // {
-  //   key: 4257,
-  //   name: "Fortnite",
-  //   image: "https://digitaldragon.co/wp-content/uploads/2023/07/Fortnite.jpeg",
-  // },
-  // {
-  //   key: 4127,
-  //   name: "Fortnite",
-  //   image: "https://digitaldragon.co/wp-content/uploads/2023/07/Fortnite.jpeg",
-  // },
-  // {
-  //   key: 433357,
-  //   name: "Fortnite",
-  //   image: "https://digitaldragon.co/wp-content/uploads/2023/07/Fortnite.jpeg",
-  // },
-  // {
-  //   key: 4533337,
-  //   name: "Fortnite",
-  //   image: "https://digitaldragon.co/wp-content/uploads/2023/07/Fortnite.jpeg",
-  // },
-  // {
-  //   key: 3457,
-  //   name: "Fortnite",
-  //   image: "https://digitaldragon.co/wp-content/uploads/2023/07/Fortnite.jpeg",
-  // },
-  // {
-  //   key: 411257,
-  //   name: "Fortnite",
-  //   image: "https://digitaldragon.co/wp-content/uploads/2023/07/Fortnite.jpeg",
-  // },
-  // {
-  //   key: 6668,
-  //   name: "Modern Warfare III",
-  //   image:
-  //     "https://insomniac.games/wp-content/uploads/2020/10/RCRA_RiftApart_Keyart_1080x1080.jpg",
-  // },
+  {
+    key: 333,
+    name: "Teenage Mutant Ninja Turtles",
+    image:
+      "https://store-images.s-microsoft.com/image/apps.61483.70702278257994163.1152c6f1-f586-40eb-a61e-0f8bad1ee621.dac35347-06f6-4003-88b5-931747a876cf?q=90&w=256&h=384&mode=crop&format=jpg&background=%230078D7",
+    price: 19.95,
+    rating: 3.7,
+    players: 251,
+    category: "Action",
+    description:
+      "This is a game about turtles and ninjas and stuff like that lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    screenShots: [
+      "https://img.olympics.com/images/image/private/t_s_pog_staticContent_hero_md/f_auto/primary/qf91enynlq3hlgtkmbon",
+      "https://www.cnet.com/a/img/resize/aa0cb54781b11950f3eb86b3402c68329659d1bc/hub/2018/01/17/c1ed8f4a-9b5d-43c4-9404-e894e8d1195e/get-better-at-rocket-league-3.png?auto=webp&fit=crop&height=1200&width=1200",
+      "https://i.ytimg.com/vi/Sct-pP-1Ip0/maxresdefault.jpg",
+    ],
+  },
+  {
+    key: 4,
+    name: "Fortnite",
+    image: "https://digitaldragon.co/wp-content/uploads/2023/07/Fortnite.jpeg",
+    price: 19.95,
+    rating: 3.7,
+    players: 251,
+    category: "Racing",
+    description:
+      "This is a game about turtles and ninjas and stuff like that lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    screenShots: [
+      "https://img.olympics.com/images/image/private/t_s_pog_staticContent_hero_md/f_auto/primary/qf91enynlq3hlgtkmbon",
+      "https://www.cnet.com/a/img/resize/aa0cb54781b11950f3eb86b3402c68329659d1bc/hub/2018/01/17/c1ed8f4a-9b5d-43c4-9404-e894e8d1195e/get-better-at-rocket-league-3.png?auto=webp&fit=crop&height=1200&width=1200",
+      "https://i.ytimg.com/vi/Sct-pP-1Ip0/maxresdefault.jpg",
+    ],
+  },
+  {
+    key: 5,
+    name: "Modern Warfare III",
+    image:
+      "https://gaming-cdn.com/images/products/15290/380x218/call-of-duty-modern-warfare-iii-ps5-playstation-5-game-playstation-store-cover.jpg?v=1699604317",
+    price: 19.95,
+    rating: 3.7,
+    players: 251,
+    category: "Action",
+    description:
+      "This is a game about turtles and ninjas and stuff like that lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    screenShots: [
+      "https://img.olympics.com/images/image/private/t_s_pog_staticContent_hero_md/f_auto/primary/qf91enynlq3hlgtkmbon",
+      "https://www.cnet.com/a/img/resize/aa0cb54781b11950f3eb86b3402c68329659d1bc/hub/2018/01/17/c1ed8f4a-9b5d-43c4-9404-e894e8d1195e/get-better-at-rocket-league-3.png?auto=webp&fit=crop&height=1200&width=1200",
+      "https://i.ytimg.com/vi/Sct-pP-1Ip0/maxresdefault.jpg",
+    ],
+  },
+
+  {
+    key: 6668,
+    name: "Modern Warfare III",
+    image:
+      "https://insomniac.games/wp-content/uploads/2020/10/RCRA_RiftApart_Keyart_1080x1080.jpg",
+    price: 19.95,
+    rating: 3.7,
+    players: 251,
+    category: "Action",
+    description:
+      "This is a game about turtles and ninjas and stuff like that lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    screenShots: [
+      "https://img.olympics.com/images/image/private/t_s_pog_staticContent_hero_md/f_auto/primary/qf91enynlq3hlgtkmbon",
+      "https://www.cnet.com/a/img/resize/aa0cb54781b11950f3eb86b3402c68329659d1bc/hub/2018/01/17/c1ed8f4a-9b5d-43c4-9404-e894e8d1195e/get-better-at-rocket-league-3.png?auto=webp&fit=crop&height=1200&width=1200",
+      "https://i.ytimg.com/vi/Sct-pP-1Ip0/maxresdefault.jpg",
+    ],
+  },
 ];
 
 // ==================

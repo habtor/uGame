@@ -1,5 +1,5 @@
 import Category from "../main/Categories";
-import HotGames from "./HotGames";
+import HotGames from "./HotGame";
 import NewGame from "./NewGame";
 
 function Games() {

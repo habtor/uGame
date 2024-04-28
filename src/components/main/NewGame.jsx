@@ -2,53 +2,161 @@ import { TiStarOutline } from "react-icons/ti";
 import { CgGames } from "react-icons/cg";
 import { FaEuroSign } from "react-icons/fa";
 import { games } from "../../data/gamesArray";
+import { useRef } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
 function NewGame() {
+  const progressCircle = useRef(null);
+  const progressContent = useRef(null);
+  const onAutoplayTimeLeft = (s, time, progress) => {
+    progressCircle.current.style.setProperty("--progress", 1 - progress);
+    progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
+  };
   return (
-    <div
-      className="flex flex-col relative w-full h-64 sm:h-[396px] justify-between bg-cover bg-center overflow-hidden border-[1px] border-gray-300 rounded-lg shadow-slate-700 cursor-pointer border-b-gray-500"
-      style={{
-        backgroundImage: `url(${games[3].image})`,
-      }}
-    >
-      <div className="sm:h-full w-full bg-gradient-to-r from-gray-800 from-0% via-transparent via-50% ">
-        <div className="flex flex-col p-6 justify-between h-full ">
-          <div className=" h-1/4 sm:w-1/3 sm:h-fit  bsg-slate-500 bg-opacity-70 rounded-lg">
-            <span className="text-2xl">
-              {games[0].description} <br />
-            </span>
-          </div>
-          <div className=" relative w-full flex justify-between">
-            <div className="flex">
-              <span className=" flex items-center mr-5">
-                <TiStarOutline className="text-yellow-500 text-2xl mr-1" />
-                <span>{games[0].rating}</span>
-              </span>
-              <span className=" flex items-center mr-5">
-                <FaEuroSign className="text-green-500 text-lg mr-1" />
-                <span>{games[0].price}</span>
-              </span>
-              <span className=" flex items-center mr-5">
-                <CgGames className="text-slate-300 text-2xl mr-1" />
-                <span>{games[0].players}</span>
-              </span>
-            </div>
-            <div className=" hidden sm:flex absolute bottom-0 right-0 overflow-auto bg-slate-700 bg-opacity-70 p-1 rounded-lg backdrop-blur-md">
-              {games[0].screenShots.map((screenShot) => (
-                <div
-                  key={games[0].screenShots.indexOf(screenShot)}
-                  className="h-24 w-32 bg-cover bg-center overflow-hidden rounded-lg  cursor-pointer  m-1"
-                  style={{
-                    backgroundImage: `url(${screenShot})`,
-                  }}
-                ></div>
-              ))}
-            </div>
-          </div>
+    <>
+      <Swiper
+        spaceBetween={30}
+        centeredSlides={true}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        pagination={{
+          clickable: true,
+        }}
+        navigation={true}
+        modules={[Autoplay, Pagination, Navigation]}
+        onAutoplayTimeLeft={onAutoplayTimeLeft}
+        className="mySwiper rounded-lg"
+      >
+        <div className="flex overflow-auto">
+          {games.map((game) => (
+            <SwiperSlide key={game.key}>
+              <div
+                className="h-96 sm:h-[506px] min-w-full bg-cover bg-center rounded-lg"
+                style={{
+                  backgroundImage: `url(${game.image})`,
+                }}
+              >
+                <div className="w-full bg-gradient-to-t sm:bg-gradient-to-r from-main from-0% via-transparent ms:via-50% via-70% h-full ">
+                  <div className="flex flex-col p-6 justify-end h-full items-center sm:items-start ">
+                    <h1 className="text-4xl text-green2 sm:mb-10 text-center sm:text-left">
+                      {game.name}
+                    </h1>
+                    <div className="sm:w-1/3 sm:h-fit rounded-lg sm:mb-10">
+                      <span className="text-xl hidden sm:flex">
+                        {game.description} <br />
+                      </span>
+                      <button className="animate-gradient-x bg-gradient-to-r from-green-900 to-green2 rounded-lg px-10 mt-2 ">
+                        Buy Now
+                      </button>
+                    </div>
+
+                    <div className="mt-2 relative w-full flex justify-center sm:justify-start">
+                      <div className="flex ">
+                        <span className=" flex items-center mr-5">
+                          <TiStarOutline className="text-yellow-500 text-2xl mr-1" />
+                          <span>{game.rating}</span>
+                        </span>
+                        <span className=" flex items-center mr-5">
+                          <FaEuroSign className="text-green-500 text-lg mr-1" />
+                          <span>{game.price}</span>
+                        </span>
+                        <span className=" flex items-center mr-5">
+                          <CgGames className="text-slate-300 text-2xl mr-1" />
+                          <span>{game.players}</span>
+                        </span>
+                      </div>
+                      <div className="hidden sm:flex absolute bottom-0 right-0 overflow-auto bg-slate-700 md:h-42 md:w-80  sm:w-48 sm:h-24 bg-opacity-40 p1 rounded-lg backdrop-blur-md">
+                        {game.screenShots.map((screenShot) => (
+                          <div
+                            key={game.screenShots.indexOf(screenShot)}
+                            className="md:h-22 md:w-28 sm:w-48 sm:h-20 bg-cover bg-center overflow-hidden rounded-lg cursor-pointer m-2 min"
+                            style={{
+                              backgroundImage: `url(${screenShot})`,
+                            }}
+                          ></div>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+          ))}
         </div>
-      </div>
-    </div>
+        <div className="autoplay-progress" slot="container-end">
+          <svg viewBox="0 0 48 48" ref={progressCircle}>
+            <circle cx="24" cy="24" r="20"></circle>
+          </svg>
+          <span ref={progressContent}></span>
+        </div>
+      </Swiper>
+    </>
   );
 }
 
 export default NewGame;
+
+// return (
+//   <>
+//     {games.map((game) => (
+//       <div
+//         key={game.key}
+//         className="flex flex-col relative w-full h-96 sm:h-[506px] justify-between bg-cover bg-center overflow-s  rounded-lg  cursor-pointer overflow-auto"
+//         style={{
+//           backgroundImage: `url(${game.image})`,
+//         }}
+//       >
+//         <div className="w-full bg-gradient-to-t sm:bg-gradient-to-r from-main from-0% via-transparent ms:via-50% via-70% h-full ">
+//           <div className="flex flex-col p-6 justify-end h-full items-center sm:items-start ">
+//             <h1 className="text-4xl text-green2 sm:mb-10 text-center sm:text-left">
+//               {game.name}
+//             </h1>
+//             <div className="sm:w-1/3 sm:h-fit rounded-lg sm:mb-10">
+//               <span className="text-xl hidden sm:flex">
+//                 {game.description} <br />
+//               </span>
+//               <button className="animate-gradient-x bg-gradient-to-r from-green-900 to-green2 rounded-lg px-10 mt-2 ">
+//                 Buy Now
+//               </button>
+//             </div>
+
+//             <div className="mt-2 relative w-full flex justify-center sm:justify-start">
+//               <div className="flex ">
+//                 <span className=" flex items-center mr-5">
+//                   <TiStarOutline className="text-yellow-500 text-2xl mr-1" />
+//                   <span>{game.rating}</span>
+//                 </span>
+//                 <span className=" flex items-center mr-5">
+//                   <FaEuroSign className="text-green-500 text-lg mr-1" />
+//                   <span>{game.price}</span>
+//                 </span>
+//                 <span className=" flex items-center mr-5">
+//                   <CgGames className="text-slate-300 text-2xl mr-1" />
+//                   <span>{game.players}</span>
+//                 </span>
+//               </div>
+//               <div className="hidden sm:flex absolute bottom-0 right-0 overflow-auto bg-slate-700 md:h-42 md:w-80  sm:w-48 sm:h-24 bg-opacity-40 p1 rounded-lg backdrop-blur-md">
+//                 {games[0].screenShots.map((screenShot) => (
+//                   <div
+//                     key={games[0].screenShots.indexOf(screenShot)}
+//                     className="md:h-22 md:w-28 sm:w-48 sm:h-20 bg-cover bg-center overflow-hidden rounded-lg cursor-pointer m-2 min"
+//                     style={{
+//                       backgroundImage: `url(${screenShot})`,
+//                     }}
+//                   ></div>
+//                 ))}
+//               </div>{" "}
+//             </div>
+//           </div>
+//         </div>
+//       </div>
+//     ))}
+//   </>
+// );

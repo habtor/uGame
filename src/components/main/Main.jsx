@@ -1,5 +1,5 @@
 import Feed from "./Feed";
-import HotGames from "./HotGames";
+import HotGames from "./HotGame";
 import useNavBarFilter from "../../hooks/NavBarFliter";
 import Games from "./Games";
 
