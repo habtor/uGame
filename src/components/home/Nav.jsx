@@ -7,18 +7,21 @@ function Nav() {
     setMenu(!menu);
   };
   return (
-    <nav className="flex justify-between w-full items-center px-3">
+    <nav className="flex justify-between w-full items-center px-3 bg-green2 sm:bg-opacity-0 rounded-t-xl">
       <div className="flex items-center w-40 justify-between">
-        <div className="relative flex flex-col items-center text-lg text-green2 ml-6 ">
-          <FaGamepad className="text-3xl z-20 absolute bottom-[-5px]" />
-          <span className=" absolute top-[-6px] uGame">uGAME</span>
+        <div className="relative flex flex-col items-center text-lg text-black sm:text-green2 ml-6 ">
+          <FaGamepad className="text-3xl z-20 absolute bottom-[-5px] " />
+          <span className=" absolute top-[-6px] uGame ">uGAME</span>
         </div>
         <div
           className={`${
             menu ? "sm:hiddsen" : "flex flex-col items-center"
           } text-lg`}
         >
-          <span className="sm:hidden cursor-pointer" onClick={showMenu}>
+          <span
+            className="sm:hidden cursor-pointer text-black"
+            onClick={showMenu}
+          >
             Home
           </span>
           <ul className={`sm:flex hidden ml-28`}>
@@ -27,14 +30,14 @@ function Nav() {
             <li className="ml-12 cursor-pointer">Chat</li>
           </ul>
           <ul
-            className={`sm:hidden absolute w-[270px]  top-16 items-center justify-center flex flex-col ${
-              menu ? "hidden" : ""
+            className={`sm:hidden absolute top-16 items-center flex flex-col ${
+              !menu ? "hidden" : "flex"
             } 
              z-20`}
           >
-            <li className="cursor-pointer">Home</li>
-            <li className="cursor-pointer">Games</li>
-            <li className="cursor-pointer">Chat</li>
+            <li className="cursor-pointer hover:text-green2">Home</li>
+            <li className="cursor-pointer hover:text-green2">Games</li>
+            <li className="cursor-pointer hover:text-green2">Chat</li>
           </ul>
         </div>
       </div>
