@@ -1,6 +1,6 @@
-import Main from "../components/main/Main";
-import NavBar from "../components/main/NavBar";
-import Nav from "../components/main/Nav";
+import Main from "../../components/Main";
+// import NavBar from "../../components/main/NavBar";
+import Nav from "../../components/home/Nav";
 
 function Home() {
   return (

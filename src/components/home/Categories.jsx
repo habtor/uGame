@@ -9,7 +9,7 @@ function Category() {
   };
 
   return (
-    <div className="mainBackgroud rounded-lg p-4 mt-10 border-y-[1px] border-green2">
+    <div className="mainBackgroud rounded-lg p-4 mt-10 border-y-[1px] border-green2 ">
       <span className="text-green2 text-2xl flex items-center">
         <MdOutlineWindow className="mr-2" />
         Categories
@@ -87,7 +87,7 @@ function Category() {
         </span>
       </div>
 
-      <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-2 mainBackgroud rounded-lg  mt-5 overflow-auto pb-5 min-h-80">
+      <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-2 mainBackgroud rounded-lg  mt-5 overflow-auto pb-5 max-h-96">
         {category !== "All"
           ? games
               .filter((game) => game.category === category)

@@ -1,4 +1,4 @@
-import Category from "../main/Categories";
+import Category from "../home/Categories";
 import HotGames from "./HotGame";
 import NewGame from "./NewGame";
 

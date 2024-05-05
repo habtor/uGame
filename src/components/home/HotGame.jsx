@@ -8,12 +8,12 @@ function HotGames() {
   return (
     <div className="mainBackgroud rounded-lg p-4 pt-2 border-y-[1px] border-green2  mt-10">
       {/* sm:mt-[-20px] mt-[-42px] */}
-      <span className="text-gsreen2 text-2xl flex items-center">
-        <FaFireAlt className="mr-2 text-yellow-500" />
-        Hot Games
+      <span className="text-gsreen2 text-2xl flex items-center text-green2 my-2">
+        <FaFireAlt className="mr-2 " />
+        <span>Hot Games</span>
       </span>
 
-      <div className="flex flex-col sm:flex-row items-center overflow-auto">
+      <div className="flex flex-col sm:flex-row items-center overflow-auto max-h-[500px]">
         {games.map((game) => (
           <div
             key={game.key}
