@@ -249,3 +249,76 @@ export const gamers = [
     activity: "added Tanage Mutant Ninja Turtles to his games",
   },
 ];
+
+export const posts = [
+  {
+    key: 0,
+    username: "John Doe",
+    image:
+      "https://global.discourse-cdn.com/business4/uploads/inductiveautomation/original/3X/9/f/9f22c2445ea34846aa71825a625f65efa7757680.png",
+    post: "This is a post about how I got my first win in Fortnite. It was a great experience and I can't wait to get my next win.",
+    likes: 12,
+    shares: 3,
+    comments: 5,
+    reposts: 1,
+    game: "Fortnite",
+    postImage:
+      "https://cdn2.unrealengine.com/Fortnite%2Fblog%2Foperation-payload-new-fortnite-spy-games-mode%2Ffortnite-spy-games-operation-payload-1920x1080-a06755ad8c0a048a2e01afbc9b99e7f977c8193e.png",
+  },
+  {
+    key: 1,
+    username: "Asd",
+    image:
+      "https://i.pinimg.com/550x/0e/51/7e/0e517eb57cb5a992ef3230b0e0d792af.jpg",
+    post: "This is a post about how I got my first win in Fortnite. It was a great experience and I can't wait to get my next win.",
+    likes: 12,
+    shares: 3,
+    comments: 5,
+    reposts: 1,
+    game: "Fortnite",
+    postImage:
+      "https://cdn.vox-cdn.com/thumbor/OwsZA7jsuNkEiaezkJxNr_04whk=/0x0:1920x1080/2000x1333/filters:focal(960x540:961x541)/cdn.vox-cdn.com/uploads/chorus_asset/file/11630099/Fortnite_20180630171046.jpg",
+  },
+  {
+    key: 2,
+    username: "Marc",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNqiS-e5Yt-EPvtFU9FTAeQ5fBXp1tHVt0krjGwcbIhazpa7GrAzYY90psT0aDmOQxVE4&usqp=CAU",
+    post: "This is a post about how I got my first win in Fortnite. It was a great experience and I can't wait to get my next win.",
+    likes: 12,
+    shares: 3,
+    comments: 5,
+    reposts: 1,
+    game: "FIFA 2023",
+    postImage:
+      "https://assets-prd.ignimgs.com/2021/09/27/fifa-22-20210927154711-1632775274561.jpg",
+  },
+  {
+    key: 3,
+    username: "Barbara",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_YBV_urBSTV6xarofLLBeCxWZ4kWKpYinuxkkVa23dZSgIZs-BPMAjI9cgeJqErU3Ov8&usqp=CAU",
+    post: "This is a post about how I got my first win in Fortnite. It was a great experience and I can't wait to get my next win.",
+    likes: 12,
+    shares: 3,
+    comments: 5,
+    reposts: 1,
+    game: "COD MW3",
+    postImage:
+      "https://www.unrankedsmurfs.com/storage/blogposts/what-is-league-of-legends/leagueoflegends.jpg",
+  },
+  {
+    key: 4,
+    username: "Wendy",
+    image:
+      "https://i0.wp.com/quanticfoundry.com/wp-content/uploads/2015/07/photodune-9235903-game-m-16x9.jpg?fit=1280%2C721&ssl=1",
+    post: "This is a post about how I got my first win in Fortnite. It was a great experience and I can't wait to get my next win.",
+    likes: 12,
+    shares: 3,
+    comments: 5,
+    reposts: 1,
+    game: "Super Mario",
+    postImage:
+      "https://d1lss44hh2trtw.cloudfront.net/assets/article/2023/06/21/super-mario-bros-wonder-announced-for-october-2023_feature.jpg",
+  },
+];
