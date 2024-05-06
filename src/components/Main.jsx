@@ -6,9 +6,8 @@ import MyGames from "./myGames/MyGames";
 
 function Main() {
   const { filter } = useNavBarFilter();
-  console.log(filter);
   return (
-    <div className="mt-14 mx-3">
+    <div className="mt-0">
       {filter === "Feed" ? (
         <>
           <HotGames />
