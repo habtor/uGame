@@ -259,7 +259,10 @@ export const posts = [
     post: "This is a post about how I got my first win in Fortnite. It was a great experience and I can't wait to get my next win.",
     likes: 12,
     shares: 3,
-    comments: 5,
+    comments: [
+      { name: "Asd", comment: "Great job!" },
+      { name: "Marc", comment: "Nice!" },
+    ],
     reposts: 1,
     game: "Fortnite",
     postImage:

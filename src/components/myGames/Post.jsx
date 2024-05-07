@@ -11,12 +11,12 @@ function Post() {
       {posts.map((post) => (
         <div
           key={post.key}
-          className=" border-y-[1px] mb-2 bg-main border-green2 rounded-xl cursor-default"
+          className="my-2 bg-main  rounded-xl cursor-default p-2"
         >
           <div className="flex justify-between items-center m-2 mx-3">
             <div className="flex items-center">
               <div
-                className="h-10 w-10 rounded-2xl bg-cover bg-center"
+                className="h-10 w-10 rounded-2xl bg-cover bg-center border-[1px] border-green2"
                 style={{
                   backgroundImage: `url("${post.image}")`,
                 }}
@@ -40,7 +40,7 @@ function Post() {
               <span className="text-sm text-gray-400">1233 Views</span>
               <div className="flex items-center mt-3">
                 <img className="h-8 w-8 rounded-full" src={post.image} alt="" />
-                <span className="ml-2">COD MW3</span>
+                <span className="ml-2">{post.game}</span>
               </div>
             </div>
           </div>
@@ -48,19 +48,19 @@ function Post() {
           <div className="flex justify-around m-5">
             <div className="flex items-center">
               <FaHeart className="border-[1px] rounded-full p-1 h-6 w-6 border-gray-500" />
-              <span className="ml-1">45</span>
+              <span className="ml-1">{post.likes}</span>
             </div>
             <div className="flex items-center">
               <BiRepost className="border-[1px] rounded-full p-1 h-6 w-6 border-gray-500" />
-              <span className="ml-1">1</span>
+              <span className="ml-1">{post.reposts}</span>
             </div>
             <div className="flex items-center">
               <IoChatboxEllipsesOutline className="border-[1px] rounded-full p-1 h-6 w-6 border-gray-500" />
-              <span className="ml-1">16</span>
+              <span className="ml-1">{post.comments.length}</span>
             </div>
             <div className="flex items-center">
               <IoIosShareAlt className="border-[1px] rounded-full p-1 h-6 w-6 border-gray-500" />
-              <span className="ml-1">3</span>
+              <span className="ml-1">{post.shares}</span>
             </div>
           </div>
 

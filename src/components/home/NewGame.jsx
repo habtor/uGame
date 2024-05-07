@@ -32,13 +32,13 @@ function NewGame() {
         navigation={true}
         modules={[Autoplay, Pagination, Navigation]}
         onAutoplayTimeLeft={onAutoplayTimeLeft}
-        className="mySwiper rounded-lg"
+        className="mySwiper rounded-lg rounded-t-none"
       >
         <div className="flex overflow-auto">
           {games.map((game) => (
             <SwiperSlide key={game.key}>
               <div
-                className="h-96 sm:h-[506px] min-w-full bg-cover bg-center rounded-lg"
+                className="h-96 sm:h-[506px] min-w-full bg-cover bg-center rounded-lg rounded-t-none"
                 style={{
                   backgroundImage: `url(${game.image})`,
                 }}
